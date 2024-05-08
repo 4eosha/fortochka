@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fortochka/static/css/main.c73a4aca.css",
+    "main.js": "/fortochka/static/js/main.3afa5883.js",
+    "index.html": "/fortochka/index.html",
+    "main.c73a4aca.css.map": "/fortochka/static/css/main.c73a4aca.css.map",
+    "main.3afa5883.js.map": "/fortochka/static/js/main.3afa5883.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c73a4aca.css",
+    "static/js/main.3afa5883.js"
+  ]
+}
