@@ -1,0 +1,194 @@
+nav .brand-logo {
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 2.1rem;
+  padding: 0;
+}
+
+.brand-logo {
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.content{
+  min-height: calc(100vh - 70px - 64px);
+  
+}
+
+basket-list .collection-item.active{
+  font-family: "Press Start 2P", system-ui;
+  background-color: #8e24aa !important;
+  color: #ffffff;
+  font-size: 75%;
+  padding: 2% 4% 2% 4%;
+  border-radius: 15px 15px 0 0;
+}
+
+.basket-list .collection-item.active.price{
+  border-radius: 0 0 15px 15px;
+}
+
+.basket-list .collection-item{
+  font-family: "Handjet", sans-serif;
+  font-size: 110%;
+  padding: 2% 3% 2% 3%;
+  color: rgb(0, 0, 0);
+}
+
+.collection-item.active:first-child{
+  border-bottom: 2px #8e24aa  solid;
+}
+.basket-list .collection-list{
+  border-bottom: 2px #8e24aa  solid;
+  font-family: "Handjet", sans-serif;
+}
+.basket-clear{
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: #fff;
+}
+.basket-quantity{
+  cursor: pointer;
+  vertical-align: middle;
+  color: #000000;
+  font-size: 20px;
+}
+.basket-list{
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 50rem;
+  max-width: 95%;
+  box-shadow: 1px 3px 8px 5px #0000001b;
+}
+
+.active {
+  font-style: italic;
+}
+
+img:before {  
+  content: " ";
+  display: block;
+
+  position: absolute;
+  top: -10px;
+  left: 0;
+  height: calc(100% + 10px);
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+  border: 2px dotted rgb(200, 200, 200);
+  border-radius: 5px;
+}
+img {  
+  min-height: 40px;
+  flex-grow: 2;
+}
+img:after {  
+  content: " Изображение отсутствует ";
+  font-size: 16px;
+  color: rgb(100, 100, 100);
+
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.basket-clear{
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: #fff;
+}
+.material-icons{
+  font-size: 35px;
+}
+
+@keyframes show {
+  from{
+    top : 70%;
+    opacity: 0;
+  }
+  to{
+    top: 50%;
+    opacity: 1;
+  }
+  
+}
+
+.cart{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  border-radius: 5%;
+  z-index: 5;
+  padding: 1rem;
+}
+
+#toast-container{
+  top: 3rem !important;
+  animation: fade-in 350ms ease-in-out;
+  -webkit-animation: fade-in 350ms ease-in-out;
+}
+.secondary-content {
+  float: right;
+  color: #8e24aa;
+  cursor: pointer;
+}
+@keyframes fade-in {
+  from{
+    transform: translateY(2rem);
+    opacity: 0;
+    -webkit-transform: translateY(2rem);
+    -moz-transform:translateY(2rem);
+    -ms-transform: translateY(2rem);
+    -o-transform: translateY(2rem);
+  }
+  to{
+    transform: translateY(0rem);
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+    -moz-transform: translateY(0rem);
+    -ms-transform: translateY(0rem);
+    -o-transform: translateY(0rem);
+  }
+  
+}
+
+.card {
+  margin: 0;
+}
+
+.goods {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media(min-width: 767px){
+  .cart{
+    bottom: unset;
+    top: 5rem;
+  }
+}
